@@ -5,8 +5,8 @@ param(
 
 $project = "Calculator.Unity"
 $namespace = "Calculator.AppManagement.Editor"
-$class = "TestScripts"
-$method = "RunTests"
+$class = "BuildScripts"
+$method = "sBuildDevCICD"
 
 if ($unityEditorPath -eq $null) {
     Write-Error "No Unity Editor specified, couldn't build project."
@@ -19,10 +19,10 @@ $unityProcess = Start-Process -NoNewWindow -PassThru -FilePath "$unityEditorPath
 Wait-Process -InputObject $unityProcess
 
 if ($unityProcess.ExitCode -eq 0) {
-    Write-Host "`nTests were successful!"
+    Write-Host "`nBuild successful!"
 } 
 else {
-    Write-Error "`nTests failed"
+    Write-Error "`nBuild failed"
     $msg = $Error[0].Exception.Message
     Write-Error "`nError Message is: $msg."
 }

@@ -1,0 +1,6 @@
+#!/usr/bin/bash
+#Run tests
+pwsh "dev/run_tests.ps1"
+#Format code
+pwsh "dev/format_code.ps1"
+
