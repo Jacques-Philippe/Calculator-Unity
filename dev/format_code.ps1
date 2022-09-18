@@ -1,1 +1,1 @@
-dotnet tool run .\Calculator.Unity\Assets
+dotnet tool run dotnet-csharpier .\Calculator.Unity\Assets
