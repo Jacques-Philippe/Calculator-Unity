@@ -423,7 +423,10 @@ namespace Calculator.StateManagement
             }
             this.activeState = currentTransition.to;
             this.LogState();
-            this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
+            if (this.onCalculatorMessageChanged != null)
+            {
+                this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
+            }
         }
 
         /// <summary>
