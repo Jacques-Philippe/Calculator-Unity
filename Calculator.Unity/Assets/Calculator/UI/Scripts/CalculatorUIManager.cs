@@ -57,6 +57,5 @@ namespace Calculator.UI.Scripts
         {
             UpdateMessage();
         }
-
     }
 }
