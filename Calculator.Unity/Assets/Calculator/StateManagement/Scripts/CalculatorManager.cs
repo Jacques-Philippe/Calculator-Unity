@@ -61,4 +61,9 @@ public class CalculatorManager : MonoBehaviour
     {
         this.calculatorStateManager.SelectEquals();
     }
+
+    public void Reset()
+    {
+        this.calculatorStateManager.Reset();
+    }
 }

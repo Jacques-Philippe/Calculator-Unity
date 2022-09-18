@@ -490,6 +490,15 @@ namespace Calculator.StateManagement
             this.HandleTransition(new SelectEqualsTransition());
         }
 
+        public void Reset()
+        {
+            this.lhs = 0;
+            this._operator = null;
+            this.rhs = null;
+            this.result = null;
+            this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
+        }
+
         private void LogState()
         {
             Debug.Log($"num1: {lhs}\toperator: {this._operator}\tnum2: {rhs}\tresult: {result}");
