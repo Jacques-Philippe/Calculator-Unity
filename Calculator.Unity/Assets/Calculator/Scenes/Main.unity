@@ -374,7 +374,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton
+      value: NumberButton1
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -476,7 +476,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (6)
+      value: NumberButton7
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -562,6 +562,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
 --- !u!224 &498646102 stripped
@@ -578,7 +582,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (2)
+      value: NumberButton3
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -663,6 +667,10 @@ PrefabInstance:
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
@@ -755,7 +763,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (5)
+      value: NumberButton6
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -840,6 +848,10 @@ PrefabInstance:
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
@@ -996,7 +1008,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (8)
+      value: NumberButton9
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1081,6 +1093,10 @@ PrefabInstance:
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
@@ -1293,7 +1309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (4)
+      value: NumberButton5
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1378,6 +1394,10 @@ PrefabInstance:
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
@@ -1479,6 +1499,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1599,7 +1623,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (1)
+      value: NumberButton2
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1685,6 +1709,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
 --- !u!224 &1414292725 stripped
@@ -1701,7 +1729,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (7)
+      value: NumberButton8
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1787,6 +1815,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
 --- !u!224 &1460950462 stripped
@@ -1803,7 +1835,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
-      value: NumberButton (3)
+      value: NumberButton4
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1888,6 +1920,10 @@ PrefabInstance:
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185608612477910, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_text
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
