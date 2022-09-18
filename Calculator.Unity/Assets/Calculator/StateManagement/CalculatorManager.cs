@@ -7,7 +7,7 @@ using Calculator.UI.Scripts;
 public class CalculatorManager : MonoBehaviour
 {
     [SerializeField]
-    private CalculatorUIManager calculatorUIManager;
+    private ResultDisplayManager calculatorUIManager;
 
     private CalculatorStateManager calculatorStateManager;
 

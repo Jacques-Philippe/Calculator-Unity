@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Calculator.UI.Scripts
 {
-    public class CalculatorUIManager : MonoBehaviour
+    public class ResultDisplayManager : MonoBehaviour
     {
         /// <summary>
         /// The UI element containing the text where state information is displayed
