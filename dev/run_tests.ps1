@@ -19,12 +19,12 @@ $unityProcess = Start-Process -NoNewWindow -PassThru -FilePath "$unityEditorPath
 Wait-Process -InputObject $unityProcess
 
 if ($unityProcess.ExitCode -eq 0) {
-    Write-Host "Tests were successful"
+    Write-Host "`nTests were successful!"
 } 
 else {
-    Write-Error "Tests failed"
+    Write-Error "`nTests failed"
     $msg = $Error[0].Exception.Message
-    Write-Error "Error Message is: $msg."
+    Write-Error "`nError Message is: $msg."
 }
 
 exit $LASTEXITCODE

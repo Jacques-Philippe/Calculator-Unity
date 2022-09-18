@@ -23,7 +23,7 @@ public class CalculatorStateManagementTests
         Assert.AreEqual(expected: OPERATOR.MULTIPLICATION, actual: _operator.Operator);
 
         _operator = new SelectOperatorTransition("/");
-        Assert.AreEqual(expected: OPERATOR.DIVISION, actual:_operator.Operator);
+        Assert.AreEqual(expected: OPERATOR.DIVISION, actual: _operator.Operator);
     }
 
     /// <summary>
@@ -63,11 +63,10 @@ public class CalculatorStateManagementTests
         var num1 = RandomIntInRange0to9();
         var num2 = (RandomIntInRange0to9() + num1) % 10;
 
-
         calculator.SelectNumber(num1);
         calculator.SelectOperator("+");
         calculator.SelectNumber(num2);
-        
+
         calculator.SelectEquals();
 
         Assert.AreEqual(expected: num1 + num2, actual: calculator.Result);

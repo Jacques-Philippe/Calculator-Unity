@@ -7,12 +7,12 @@ using UnityEditor;
 //using UnityEditor.AddressableAssets.Settings;
 using UnityEditor.Build.Reporting;
 using UnityEngine;
+
 /// <summary>
 /// This script exposes two functions to build the project, as well as its addressables
 /// </summary>
 public class BuildScripts : MonoBehaviour
 {
-
 
     ///// <summary>
     ///// The list of scenes to be included in the Unity project build
@@ -217,5 +217,4 @@ public class BuildScripts : MonoBehaviour
 
     //    return success;
     //}
-
 }

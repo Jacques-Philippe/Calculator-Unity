@@ -1,0 +1,3 @@
+#!/usr/bin/bash
+pwsh "dev/run_tests.ps1"
+

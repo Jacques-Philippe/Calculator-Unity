@@ -5,7 +5,6 @@ using Calculator.StateManagement;
 
 public class CalculatorManager : MonoBehaviour
 {
-
     private CalculatorStateManager calculatorStateManager;
 
     private void Start()
@@ -27,5 +26,4 @@ public class CalculatorManager : MonoBehaviour
     {
         this.calculatorStateManager.SelectEquals();
     }
-
 }
