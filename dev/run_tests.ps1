@@ -25,7 +25,6 @@ else {
     Write-Error "Tests failed"
     $msg = $Error[0].Exception.Message
     Write-Error "Error Message is: $msg."
-    exit $LASTEXITCODE
 }
 
 exit $LASTEXITCODE
