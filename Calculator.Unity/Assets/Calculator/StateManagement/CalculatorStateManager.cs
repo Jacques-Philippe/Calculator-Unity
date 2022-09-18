@@ -91,12 +91,12 @@ namespace Calculator.StateManagement
         /// <summary>
         /// The left-hand side of the operation
         /// </summary>
-        private float? num1 = null;
+        private float? lhs = null;
 
         /// <summary>
         /// The right-hand side of the operation
         /// </summary>
-        private float? num2 = null;
+        private float? rhs = null;
 
         private OPERATOR? _operator = null;
 
@@ -105,6 +105,42 @@ namespace Calculator.StateManagement
         /// </summary>
         private float? result = null;
 
+        public delegate void OnCalculatorMessageChanged(string newMessage);
+        public OnCalculatorMessageChanged onCalculatorMessageChanged;
+
+        /// <summary>
+        /// The message which should be displayed in the Calculator display pane
+        /// </summary>
+        public string CalculatorMessage
+        {
+            get
+            {
+                if (lhs == null)
+                {
+                    return $"= ";
+                }
+                else if (_operator == null)
+                {
+                    return $"= {lhs}";
+                }
+                else if (rhs == null)
+                {
+                    return $"= {lhs} {OperatorToString((OPERATOR)_operator)}";
+                }
+                else if (result == null)
+                {
+                    return $"= {lhs} {OperatorToString((OPERATOR)_operator)} {rhs}";
+                }
+                else
+                {
+                    return $"= {lhs} {OperatorToString((OPERATOR)_operator)} {rhs} = {result}";
+                }
+            }
+        }
+
+        /// <summary>
+        /// The result of the operation performed by the calculator
+        /// </summary>
         public float? Result
         {
             get => result;
@@ -113,7 +149,7 @@ namespace Calculator.StateManagement
         public CalculatorStateManager()
         {
             this.activeState = CALCULATOR_STATE.STATE_0;
-            this.num1 = 0;
+            this.lhs = 0;
         }
 
         private class StateTransitionArguments
@@ -295,7 +331,7 @@ namespace Calculator.StateManagement
                 {
                     case CALCULATOR_STATE.STATE_0:
                     {
-                        this.num1 = number;
+                        this.lhs = number;
                         ResetAllButNum1();
                         break;
                     }
@@ -303,25 +339,27 @@ namespace Calculator.StateManagement
                     case CALCULATOR_STATE.STATE_1:
                     case CALCULATOR_STATE.STATE_2:
                     {
-                        this.num1 = float.Parse($"{this.num1}{number}");
+                        this.lhs = float.Parse($"{this.lhs}{number}");
                         this.ResetAllButNum1();
                         break;
                     }
                     case CALCULATOR_STATE.STATE_3:
                     {
-                        this.num2 = number;
+                        this.rhs = number;
+                        this.result = null;
                         break;
                     }
                     case CALCULATOR_STATE.STATE_4:
                     case CALCULATOR_STATE.STATE_5:
                     {
-                        this.num2 = float.Parse($"{this.num2}{number}");
+                        this.rhs = float.Parse($"{this.rhs}{number}");
+                        this.result = null;
                         break;
                     }
                     case CALCULATOR_STATE.STATE_6:
                     case CALCULATOR_STATE.STATE_7:
                     {
-                        this.num1 = number;
+                        this.lhs = number;
                         this.ResetAllButNum1();
                         break;
                     }
@@ -342,6 +380,7 @@ namespace Calculator.StateManagement
                     case CALCULATOR_STATE.STATE_3:
                     {
                         this._operator = __operator;
+                        this.rhs = null;
                         break;
                     }
                     case CALCULATOR_STATE.STATE_4:
@@ -349,9 +388,13 @@ namespace Calculator.StateManagement
                     case CALCULATOR_STATE.STATE_6:
                     case CALCULATOR_STATE.STATE_7:
                     {
+                        if (this._operator != null && this.rhs != null)
+                        {
+                            this.lhs = FindResult(this.lhs, this._operator, this.rhs);
+                        }
+
                         this._operator = __operator;
-                        this.num1 = FindResult(this.num1, this._operator, this.num2);
-                        this.num2 = null;
+                        this.rhs = null;
                         break;
                     }
                 }
@@ -366,20 +409,21 @@ namespace Calculator.StateManagement
                     case CALCULATOR_STATE.STATE_3:
                     case CALCULATOR_STATE.STATE_7:
                     {
-                        this.result = this.num1;
+                        this.result = this.lhs;
                         break;
                     }
                     case CALCULATOR_STATE.STATE_4:
                     case CALCULATOR_STATE.STATE_5:
                     case CALCULATOR_STATE.STATE_6:
                     {
-                        this.result = this.FindResult(this.num1, this._operator, this.num2);
+                        this.result = this.FindResult(this.lhs, this._operator, this.rhs);
                         break;
                     }
                 }
             }
             this.activeState = currentTransition.to;
             this.LogState();
+            this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
         }
 
         /// <summary>
@@ -423,7 +467,8 @@ namespace Calculator.StateManagement
 
         private void ResetAllButNum1()
         {
-            this.num2 = null;
+            this.rhs = null;
+            this._operator = null;
             this.result = null;
         }
 
@@ -444,7 +489,23 @@ namespace Calculator.StateManagement
 
         private void LogState()
         {
-            Debug.Log($"num1: {num1}\toperator: {this._operator}\tnum2: {num2}\tresult: {result}");
+            Debug.Log($"num1: {lhs}\toperator: {this._operator}\tnum2: {rhs}\tresult: {result}");
+        }
+
+        private static string OperatorToString(OPERATOR o)
+        {
+            switch (o)
+            {
+                case OPERATOR.ADDITION:
+                    return "+";
+                case OPERATOR.SUBTRACTION:
+                    return "-";
+                case OPERATOR.MULTIPLICATION:
+                    return "*";
+                case OPERATOR.DIVISION:
+                default:
+                    return "/";
+            }
         }
     }
 }
