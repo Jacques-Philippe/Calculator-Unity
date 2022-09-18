@@ -13,7 +13,7 @@ public class CalculatorManager : MonoBehaviour
 
     private void Start()
     {
-//Attach delegate to be invoked on state update, in order to update the UI on state change
+        //Attach delegate to be invoked on state update, in order to update the UI on state change
         this.calculatorStateManager.onCalculatorMessageChanged += this.UpdateUI;
 
         //Initialize the UI manager from the state manager

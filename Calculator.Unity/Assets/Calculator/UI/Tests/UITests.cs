@@ -21,27 +21,6 @@ public class UITests
 
     private CalculatorManager calculatorManager;
 
-    private GameObject FindGameObject(string name)
-    {
-        var gameobject = GameObject.Find(name);
-        if (gameobject == null)
-        {
-            throw new System.Exception($"Unable to find gameobject with name {name}");
-        }
-        return gameobject;
-    }
-
-    private T GetComponentFromGameObjectWithName<T>(string name)
-    {
-        var obj = this.FindGameObject(name);
-        var component = obj.GetComponent<T>();
-        if (component == null)
-        {
-            throw new System.Exception($"Unable to find component of type {typeof(T)} on gameobject of name {name}");
-        }
-        return component;
-    }
-
 
     //// A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
     //// `yield return null;` to skip a frame.
@@ -90,6 +69,45 @@ public class UITests
     //    yield return null;
     //}
 
+
+    [OneTimeSetUp]
+    public void OneTimeSetup()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+        
+    }
+
+    [UnityTest]
+    [LoadScene("Assets/Calculator/Scenes/Main.unity")]
+    public IEnumerator UIInitializesProperly()
+    {
+        yield return new WaitWhile(() => !referencesSetup);
+
+        const string INITIAL_MESSAGE = "= 0";
+        Assert.AreEqual(expected: INITIAL_MESSAGE, actual: this.displayManager.Message);
+        yield return null;
+    }
+
+    [UnityTest]
+    [LoadScene("Assets/Calculator/Scenes/Main.unity")]
+    public IEnumerator LHSUpdatesForNumberPress()
+    {
+        yield return new WaitWhile(() => !referencesSetup);
+        const string INITIAL_MESSAGE = "= 0";
+        Assert.AreEqual(expected: INITIAL_MESSAGE, actual: this.displayManager.Message);
+
+        Click_Number(1);
+        //yield return null;
+        Assert.AreEqual(expected: "= 1", actual: this.displayManager.Message);
+
+        Click_Number(2);
+        Assert.AreEqual(expected: "= 12", actual: this.displayManager.Message);
+
+        // Use the Assert class to test conditions.
+        // Use yield to skip a frame.
+        yield return null;
+    }
+
     /// <summary>
     /// Helper to retrieve a button gameobject from our scene
     /// </summary>
@@ -103,7 +121,7 @@ public class UITests
             return null;
         }
         var gameObjectName = $"NumberButton{number}";
-        var gameObject = GameObject.Find(gameObjectName);
+        var gameObject = FindGameObjectInActiveScene(gameObjectName);
         if (gameObject == null)
         {
             Debug.LogError($"Couldn't find gameobject {gameObjectName}");
@@ -119,25 +137,22 @@ public class UITests
     private static void Click_Number(int number)
     {
         var button = GetNumberButton(number);
+        Debug.Log($"Trying to click {button.name}");
         button.GetComponent<Button>().onClick.Invoke();
     }
 
     private bool referencesSetup = false;
     private bool settingUpReferences = false;
 
-    [OneTimeSetUp]
-    public void OneTimeSetup()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-        //SceneManager.LoadScene(SCENE_NAME);
-    }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        referencesSetup = false;
         Debug.Log($"Loaded scene {scene.name} in mode {mode.ToString()}");
-        if (referencesSetup) return;
+        if (referencesSetup)
+            return;
         this.SetUpReferences();
-        
+        referencesSetup = true;
     }
 
     void SetUpReferences()
@@ -146,7 +161,9 @@ public class UITests
         {
             settingUpReferences = true;
 
-            var objects = Resources.FindObjectsOfTypeAll<Transform>().Where(o => o.gameObject.activeInHierarchy);
+            var objects = Resources
+                .FindObjectsOfTypeAll<Transform>()
+                .Where(o => o.gameObject.activeInHierarchy);
             foreach (Transform t in objects)
             {
                 if (t.name == MANAGER_NAME)
@@ -161,45 +178,25 @@ public class UITests
                 }
             }
             settingUpReferences = false;
-
-            referencesSetup = true;
         }
     }
 
-    //[UnityTest]
-    //public IEnumerator TestReferencesNotNullAfterLoad()
-    //{
-    //    //SceneManager.LoadScene(SCENE_NAME);
-    //    //yield return null;
-    //    this.SetUpReferences();
-    //    yield return new WaitWhile(() => !referencesSetup);
-    //    yield return null;
-    //}
-
-    //[UnityTest]
-    //public IEnumerator TestReferencesNotNullAfterLoad()
-    //{
-    //    yield return new WaitWhile(() => !referencesSetup);
-    //    Assert.IsNotNull(this.calculatorManager);
-    //    Assert.IsNotNull(this.displayManager);
-    //    //Add all other references as well for quick nullref testing
-    //    yield return null;
-    //}
-
-    [UnityTest]
-    [LoadScene("Assets/Calculator/Scenes/Main.unity")]
-    public IEnumerator UIInitializesProperly()
+    private static GameObject FindGameObjectInActiveScene(string name)
     {
-        yield return new WaitWhile(() => !referencesSetup);
-        this.calculatorManager.Reset();
-        yield return null;
-        yield return null;
-        const string INITIAL_MESSAGE = "= 0";
-        Assert.AreEqual(expected: INITIAL_MESSAGE, actual: this.displayManager.Message);
-        yield return null;
+        var objects = Resources
+                .FindObjectsOfTypeAll<Transform>()
+                .Where(o => o.gameObject.activeInHierarchy);
+        foreach (Transform t in objects)
+        {
+            if (t.name == name)
+            {
+                return t.gameObject;
+            }
+        }
+        throw new System.Exception($"Gameobject {name} was not found in the active scene");
     }
-}
 
+}
 
 public class LoadSceneAttribute : NUnitAttribute, IOuterUnityTestAction
 {
@@ -210,7 +207,10 @@ public class LoadSceneAttribute : NUnitAttribute, IOuterUnityTestAction
     IEnumerator IOuterUnityTestAction.BeforeTest(ITest test)
     {
         Debug.Assert(scene.EndsWith(".unity"));
-        yield return EditorSceneManager.LoadSceneAsyncInPlayMode(scene, new LoadSceneParameters(LoadSceneMode.Single));
+        yield return EditorSceneManager.LoadSceneAsyncInPlayMode(
+            scene,
+            new LoadSceneParameters(LoadSceneMode.Single)
+        );
     }
 
     IEnumerator IOuterUnityTestAction.AfterTest(ITest test)
