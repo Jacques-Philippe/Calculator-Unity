@@ -1546,6 +1546,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
   m_PrefabInstance: {fileID: 1120700628}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1187440513 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3132203842374453717, guid: 1c5c99574fbfdc34c9cd09586a79f8f0, type: 3}
+  m_PrefabInstance: {fileID: 3132203843401625172}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1390561836
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2253,6 +2264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1699952799}
   - component: {fileID: 1699952800}
+  - component: {fileID: 1699952801}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -2286,6 +2298,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5af06c0e6a750234498f2b3897dce2df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  calculatorUIManager: {fileID: 1699952801}
+--- !u!114 &1699952801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1699952798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9221f19b5a950d408059f4db075e743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1187440513}
 --- !u!1 &2121032832
 GameObject:
   m_ObjectHideFlags: 0
