@@ -376,6 +376,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberButton1
       objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -477,6 +489,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton7
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -583,6 +611,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton3
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -764,6 +808,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton6
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -992,6 +1052,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Operator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: '-'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714425193684495, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_text
+      value: '-'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c776460398800488d33e7fd77267a4, type: 3}
 --- !u!224 &713061752 stripped
@@ -1009,6 +1093,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton9
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1293,6 +1393,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Operator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: /
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714425193684495, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_text
+      value: /
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c776460398800488d33e7fd77267a4, type: 3}
 --- !u!224 &996779662 stripped
@@ -1310,6 +1434,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton5
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1416,6 +1556,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton0
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1607,6 +1763,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Operator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: '*'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714425193684495, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_text
+      value: '*'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c776460398800488d33e7fd77267a4, type: 3}
 --- !u!224 &1396343542 stripped
@@ -1624,6 +1804,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton2
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -1731,6 +1927,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: NumberButton8
       objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1836,6 +2048,22 @@ PrefabInstance:
     - target: {fileID: 379185607516092370, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Name
       value: NumberButton4
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Number
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 379185607516092396, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_FloatArgument
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 379185607516092397, guid: 0fd0e47586cedad459b5e8a44379dc1b, type: 3}
       propertyPath: m_Pivot.x
@@ -2131,6 +2359,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 51838749}
     m_Modifications:
+    - target: {fileID: 2438068772413831000, guid: aa576925352963841b39d0de59827355, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438068772413831000, guid: aa576925352963841b39d0de59827355, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 2438068772413831000, guid: aa576925352963841b39d0de59827355, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Equals
+      objectReference: {fileID: 0}
+    - target: {fileID: 2438068772413831000, guid: aa576925352963841b39d0de59827355, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
     - target: {fileID: 2438068772413831001, guid: aa576925352963841b39d0de59827355, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2315,6 +2559,26 @@ PrefabInstance:
     - target: {fileID: 3141714424294101556, guid: 23c776460398800488d33e7fd77267a4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1699952800}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Click_Operator
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: CalculatorManager, StateManagement
+      objectReference: {fileID: 0}
+    - target: {fileID: 3141714424294101557, guid: 23c776460398800488d33e7fd77267a4, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
+      value: +
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23c776460398800488d33e7fd77267a4, type: 3}
