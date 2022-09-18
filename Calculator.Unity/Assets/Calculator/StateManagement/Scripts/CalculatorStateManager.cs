@@ -320,9 +320,9 @@ namespace Calculator.StateManagement
             var currentTransition = allTransitions.Find(
                 t => t.from == this.activeState && transition.GetType() == t.transition
             );
-            Debug.Log(
-                $"Transitioning from {currentTransition.from} to {currentTransition.to} given transition {transition.GetType()}"
-            );
+            //Debug.Log(
+            //    $"Transitioning from {currentTransition.from} to {currentTransition.to} given transition {transition.GetType()}"
+            //);
 
             if (transition is SelectNumberTransition)
             {
@@ -422,7 +422,7 @@ namespace Calculator.StateManagement
                 }
             }
             this.activeState = currentTransition.to;
-            this.LogState();
+            //this.LogState();
             if (this.onCalculatorMessageChanged != null)
             {
                 this.onCalculatorMessageChanged.Invoke(CalculatorMessage);

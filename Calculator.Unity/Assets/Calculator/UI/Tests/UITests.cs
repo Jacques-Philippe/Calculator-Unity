@@ -16,10 +16,9 @@ public class UITests
     private readonly string MANAGER_NAME = "Calculator";
 
     private readonly string ADD_BUTTON_NAME = "AddButton";
-    private readonly string SUBTRACT_BUTTON_NAME = "SubtractButton"; 
-    private readonly string MULTIPLY_BUTTON_NAME = "MultiplyButton"; 
+    private readonly string SUBTRACT_BUTTON_NAME = "SubtractButton";
+    private readonly string MULTIPLY_BUTTON_NAME = "MultiplyButton";
     private readonly string DIVIDE_BUTTON_NAME = "DivideButton";
-
 
     private readonly string SCENE_NAME = "Calculator/Scenes/Main";
 
@@ -27,11 +26,8 @@ public class UITests
 
     private CalculatorManager calculatorManager;
 
-
     private bool referencesSetup = false;
     private bool settingUpReferences = false;
-
-
 
     [OneTimeSetUp]
     public void OneTimeSetup()
@@ -106,7 +102,7 @@ public class UITests
     public IEnumerator Given_LHS_Operator_Functions()
     {
         yield return new WaitWhile(() => !referencesSetup);
-        
+
         Click_Number(1);
         Click_Number(2);
         Assert.AreEqual(expected: "= 12", actual: this.displayManager.Message);
@@ -159,7 +155,7 @@ public class UITests
         Click_Number(1);
         Click_Number(2);
         Assert.AreEqual(expected: "= 0 + 12", actual: this.displayManager.Message);
-        
+
         this.calculatorManager.Reset();
         Assert.AreEqual(expected: "= 0", actual: this.displayManager.Message);
 
@@ -179,7 +175,7 @@ public class UITests
         Click_Number(1);
         Click_Number(2);
         Assert.AreEqual(expected: "= 0 * 12", actual: this.displayManager.Message);
-        
+
         this.calculatorManager.Reset();
         Assert.AreEqual(expected: "= 0", actual: this.displayManager.Message);
 
@@ -276,10 +272,9 @@ public class UITests
         Click_Number(1);
         Click_Number(2);
         Assert.AreEqual(expected: "= 0 - 12", actual: this.displayManager.Message);
-        
+
         Click_Operator(SUBTRACT_BUTTON_NAME);
         Assert.AreEqual(expected: "= -12 -", actual: this.displayManager.Message);
-
 
         this.calculatorManager.Reset();
         Assert.AreEqual(expected: "= 0", actual: this.displayManager.Message);
@@ -293,7 +288,6 @@ public class UITests
 
         Click_Operator(MULTIPLY_BUTTON_NAME);
         Assert.AreEqual(expected: "= 0 *", actual: this.displayManager.Message);
-
 
         this.calculatorManager.Reset();
         Assert.AreEqual(expected: "= 0", actual: this.displayManager.Message);
@@ -362,7 +356,6 @@ public class UITests
         Debug.Log($"Trying to click {button.name}");
         button.GetComponent<Button>().onClick.Invoke();
     }
-
 
     private static GameObject FindGameObjectInActiveScene(string name)
     {
