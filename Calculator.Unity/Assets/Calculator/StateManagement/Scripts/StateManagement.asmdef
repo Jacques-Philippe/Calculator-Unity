@@ -1,0 +1,16 @@
+{
+    "name": "StateManagement",
+    "rootNamespace": "",
+    "references": [
+        "GUID:148a881a20e20664f8b862c99e5b4729"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
