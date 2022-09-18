@@ -7,7 +7,6 @@ using UnityEditor.AddressableAssets.Settings;
 
 namespace Calculator.AppManagement.Editor
 {
-
     /// <summary>
     /// This script exposes two functions to build the project, as well as its addressables
     /// </summary>
