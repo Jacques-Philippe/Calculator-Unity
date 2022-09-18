@@ -38,7 +38,7 @@ public class UITests
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         referencesSetup = false;
-        Debug.Log($"Loaded scene {scene.name} in mode {mode.ToString()}");
+        //Debug.Log($"Loaded scene {scene.name} in mode {mode.ToString()}");
         if (referencesSetup)
             return;
         this.SetUpReferences();
@@ -58,12 +58,12 @@ public class UITests
             {
                 if (t.name == MANAGER_NAME)
                 {
-                    Debug.Log("Initializing manager");
+                    //Debug.Log("Initializing manager");
                     this.calculatorManager = t.GetComponent<CalculatorManager>();
                 }
                 else if (t.name == RESULT_DISPLAY_NAME)
                 {
-                    Debug.Log("Initializing display manager");
+                    //Debug.Log("Initializing display manager");
                     this.displayManager = t.GetComponent<ResultDisplayManager>();
                 }
             }
@@ -332,7 +332,7 @@ public class UITests
     private static void Click_Number(int number)
     {
         var button = GetNumberButton(number);
-        Debug.Log($"Trying to click {button.name}");
+        //Debug.Log($"Trying to click {button.name}");
         button.GetComponent<Button>().onClick.Invoke();
     }
 
@@ -343,7 +343,7 @@ public class UITests
     private static void Click_Operator(string op)
     {
         var button = FindGameObjectInActiveScene(op);
-        Debug.Log($"Trying to click {button.name}");
+        //Debug.Log($"Trying to click {button.name}");
         button.GetComponent<Button>().onClick.Invoke();
     }
 
@@ -353,7 +353,7 @@ public class UITests
     private static void Click_Equals()
     {
         var button = FindGameObjectInActiveScene("EqualsButton");
-        Debug.Log($"Trying to click {button.name}");
+        //Debug.Log($"Trying to click {button.name}");
         button.GetComponent<Button>().onClick.Invoke();
     }
 
