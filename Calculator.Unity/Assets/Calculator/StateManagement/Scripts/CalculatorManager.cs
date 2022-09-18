@@ -9,13 +9,11 @@ public class CalculatorManager : MonoBehaviour
     [SerializeField]
     private ResultDisplayManager calculatorUIManager;
 
-    private CalculatorStateManager calculatorStateManager;
+    private CalculatorStateManager calculatorStateManager = new CalculatorStateManager();
 
     private void Start()
     {
-        this.calculatorStateManager = new CalculatorStateManager();
-
-        //Attach delegate to be invoked on state update, in order to update the UI on state change
+//Attach delegate to be invoked on state update, in order to update the UI on state change
         this.calculatorStateManager.onCalculatorMessageChanged += this.UpdateUI;
 
         //Initialize the UI manager from the state manager

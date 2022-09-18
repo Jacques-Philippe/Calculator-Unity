@@ -496,7 +496,10 @@ namespace Calculator.StateManagement
             this._operator = null;
             this.rhs = null;
             this.result = null;
-            this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
+            if (this.onCalculatorMessageChanged != null)
+            {
+                this.onCalculatorMessageChanged.Invoke(CalculatorMessage);
+            }
         }
 
         private void LogState()
