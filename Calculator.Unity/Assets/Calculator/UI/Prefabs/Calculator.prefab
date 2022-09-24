@@ -62,8 +62,8 @@ MonoBehaviour:
   sounds:
   - Name: Button Press
     Clip: {fileID: 8300000, guid: 6007ef2f03849c74da2adb9b033f1dff, type: 3}
-    Volume: 0.492
-    Pitch: 0.492
+    Volume: 1
+    Pitch: 1.25
     Source: {fileID: 0}
 --- !u!1001 &7644736835078511254
 PrefabInstance:
