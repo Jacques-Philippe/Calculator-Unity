@@ -1,11 +1,6 @@
 # name: Acquire activation file
 # on:
 #   workflow_dispatch:
-#     inputs:
-#       environment:
-#         description: "Environment to run against"
-#         type: environment
-#         required: true
 
 # jobs:
 #   activation:
