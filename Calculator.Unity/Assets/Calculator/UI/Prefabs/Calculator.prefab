@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6925540595937184255}
   - component: {fileID: 6925540595937184254}
+  - component: {fileID: 27187644}
   m_Layer: 0
   m_Name: Calculator
   m_TagString: Untagged
@@ -45,6 +46,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   calculatorUIManager: {fileID: 5434618477784841120}
+  calculatorSoundManager: {fileID: 27187644}
+--- !u!114 &27187644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6925540595937184241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0be27003953e891419c78b99fa18ce04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - Name: Button Press
+    Clip: {fileID: 8300000, guid: 6007ef2f03849c74da2adb9b033f1dff, type: 3}
+    Volume: 0.492
+    Pitch: 0.492
+    Source: {fileID: 0}
 --- !u!1001 &7644736835078511254
 PrefabInstance:
   m_ObjectHideFlags: 0

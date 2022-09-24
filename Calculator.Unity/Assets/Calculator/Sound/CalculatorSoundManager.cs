@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Audio;
 
 public class CalculatorSoundManager : MonoBehaviour
 {
@@ -30,6 +28,7 @@ public class CalculatorSoundManager : MonoBehaviour
         {
             throw new System.Exception($"Sound {soundName} was not found in the list of available sounds");
         }
-        sound.Source.Play();
+        Debug.Log($"Playing sound {sound.Name}");
+        sound.Source.PlayOneShot(sound.Clip);
     }
 }
