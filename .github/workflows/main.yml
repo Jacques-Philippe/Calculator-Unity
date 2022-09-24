@@ -54,8 +54,7 @@
 # #           path: ${{ steps.getManualLicenseFile.outputs.filePath }}
 
 # name: Acquire activation file
-on:
-  workflow_dispatch: {}
+on: push
 jobs:
   activation:
     name: Request manual activation file 🔑
