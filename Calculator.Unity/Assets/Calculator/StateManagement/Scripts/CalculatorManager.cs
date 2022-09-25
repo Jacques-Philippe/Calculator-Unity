@@ -9,6 +9,9 @@ public class CalculatorManager : MonoBehaviour
     [SerializeField]
     private ResultDisplayManager calculatorUIManager;
 
+    [SerializeField]
+    private CalculatorSoundManager calculatorSoundManager;
+
     private CalculatorStateManager calculatorStateManager = new CalculatorStateManager();
 
     private void Start()
@@ -40,6 +43,7 @@ public class CalculatorManager : MonoBehaviour
     /// <param name="number"></param>
     public void Click_Number(float number)
     {
+        this.calculatorSoundManager.PlaySound("Button Press");
         this.calculatorStateManager.SelectNumber(number);
     }
 
@@ -49,6 +53,7 @@ public class CalculatorManager : MonoBehaviour
     /// <param name="operatorString"></param>
     public void Click_Operator(string operatorString)
     {
+        this.calculatorSoundManager.PlaySound("Button Press");
         this.calculatorStateManager.SelectOperator(operatorString);
     }
 
@@ -57,6 +62,7 @@ public class CalculatorManager : MonoBehaviour
     /// </summary>
     public void Click_Equals()
     {
+        this.calculatorSoundManager.PlaySound("Button Press");
         this.calculatorStateManager.SelectEquals();
     }
 
